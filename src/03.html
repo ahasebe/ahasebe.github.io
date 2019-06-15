@@ -8,21 +8,44 @@
     <link rel="shortcut icon" href="../img/ahasebe2.png">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:600,700,800" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 </head>
 <body>
     <section class="area-detail">
         <div class="content-detail">
-            <ul class="content-detail__list">
-                <li class="content-detail__link"><a href="../index.html">TOP</a></li>
-                <li class="content-detail__link"><a href="me.html">ME</a></li>
-                <li class="content-detail__link"><a href="https://note.mu/ahasebe">NOTE</a></li>
-            </ul>
             <h1 class="content-detail__heading">Yahoo!ウォレット/ Yahoo!マネー</h1>
             <p class="content-detail__text">2016</p>
             <p class="content-detail__img01"><img src="../img/content--detail03-01.png" width="100%"></p>
             <ul class="content-detail__img02">
-                <li><img src="../img/content--detail03-02.png" width="100%"></li>
+              <!-- template for the modal component -->
+                <script type="text/x-template" id="modal-template">
+                  <transition name="modal">
+                    <div class="modal-mask" @click="$emit('close')">
+                      <div class="modal-wrapper">
+                        <div class="modal-container">
+                          <div class="modal-body">
+                            <slot name="body">
+                              <img src="../img/wallet_app.png" width="100%">
+                            </slot>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </transition>
+                </script>
+
+                <!-- app -->
+                <li class="content-detail__img02-modal">
+                <div class="modal1">
+                  <img id="show-modal" @click="showModal = true"src="../img/content--detail03-02.png" width="100%">
+                  <!-- <button id="show-modal" @click="showModal = true">Show Modal</button> -->
+                  <!-- use the modal component, pass in the prop -->
+                  <modal v-if="showModal" @close="showModal = false">
+                  </modal>
+                </div>
+                </li>
                 <li><img src="../img/content--detail03-03.png" width="100%"></li>
+                <li class="content-detail__info"><span>*画像をクリックすると拡大できます</span></li>
             </ul>
         </div>
     </section><!-- area-detail -->  
@@ -61,3 +84,16 @@
     </section>
 </body>
 </html>
+<script>
+// register modal component
+Vue.component('modal', {
+  template: '#modal-template'
+})
+
+// start app
+new Vue({
+  el: '.modal1',
+  data: {
+    showModal: false
+  }
+})</script>

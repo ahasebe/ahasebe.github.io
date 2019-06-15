@@ -8,15 +8,11 @@
     <link rel="shortcut icon" href="../img/ahasebe2.png">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:600,700,800" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 </head>
 <body>
     <section class="area-detail">
         <div class="content-detail">
-            <ul class="content-detail__list">
-                <li class="content-detail__link"><a href="../index.html">TOP</a></li>
-                <li class="content-detail__link"><a href="me.html">ME</a></li>
-                <li class="content-detail__link"><a href="https://note.mu/ahasebe">NOTE</a></li>
-            </ul>
             <h1 class="content-detail__heading">ポイントサイトリニューアル</h1>
             <p class="content-detail__text">2015</p>
             <p class="content-detail__img01"><img src="../img/content--detail-01.png" width="100%"></p>
@@ -56,3 +52,18 @@
     </section>
 </body>
 </html>
+
+<script>
+import heading_page from '/components/heading_page'
+
+export default {
+    components: {
+    'heading-page': heading_page,
+    },
+    data: function() {
+    return {
+        title: ''
+    }
+  }
+}
+</script>
