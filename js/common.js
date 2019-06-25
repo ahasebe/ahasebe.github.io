@@ -1,23 +1,24 @@
-Vue.component('modal', {
-  template: '#modal-template'
-})
-
 // start app
 new Vue({
   el: '#modal1',
   data: {
     showModal: false
+  },
+  components: {
+    modal: {
+      template: '#modal-template'
+    }
   }
-})
+});
 
-// Vue.component('modal2', {
-//   template: '#modal-template2'
-// })
-
-// // start app
-// new Vue({
-//   el: '#modal2',
-//   data: {
-//     showModal2: false
-//   }
-// })
+new Vue({
+  el: '#modal2',
+  data: {
+    showModal2: false
+  },
+  components: {
+    modal: {
+      template: '#modal-template2'
+    }
+  }
+});
