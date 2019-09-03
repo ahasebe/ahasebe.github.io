@@ -15,56 +15,6 @@
             <h1 class="content-detail__heading">Yahoo!ウォレット/ Yahoo!マネー</h1>
             <p class="content-detail__text">2016</p>
             <p class="content-detail__img01"><img src="../img/content--detail03-01.png" width="100%"></p>
-            <ul class="content-detail__img02">
-              <!-- template for the modal component -->
-                <script type="text/x-template" id="modal-template">
-                  <transition name="modal">
-                    <div class="modal-mask" @click="$emit('close')">
-                      <div class="modal-wrapper">
-                        <div class="modal-container">
-                          <div class="modal-body">
-                            <slot name="body">
-                              <img src="../img/wallet_app.png" width="100%">
-                            </slot>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </transition>
-                </script>
-                <script type="text/x-template" id="modal-template2">
-                  <transition name="modal2">
-                    <div class="modal-mask" @click="$emit('close')">
-                      <div class="modal-wrapper">
-                        <div class="modal-container">
-                          <div class="modal-body">
-                            <slot name="body">
-                              <img src="../img/wallet_top.png" width="100%">
-                            </slot>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </transition>
-                </script>
-
-                <!-- app -->
-                <li class="content-detail__img02-modal">
-                  <div id="modal1">
-                    <img id="show-modal" @click="showModal = true" src="../img/content--detail03-02.png" width="100%">
-                    <modal v-if="showModal" @close="showModal = false">
-                    </modal>
-                  </div>
-                </li>
-                <li>
-                  <div id="modal2">
-                    <img id="show-modal2" @click="showModal2 = true" src="../img/content--detail03-03.png" width="100%">
-                    <modal v-if="showModal2" @close="showModal2 = false">
-                    </modal>
-                  </div>
-                </li>
-                <li class="content-detail__info"><span>*画像をクリックすると拡大できます</span></li>
-            </ul>
         </div>
     </section><!-- area-detail -->  
     <section class="area-description">
@@ -72,22 +22,86 @@
             <dl class="content-description__note block-note">
                 <dt class="block-note__title">概要</dt>
                 <dd class="block-note__phrase">
-                    Yahoo!ウォレットはWEBページのデザイン刷新，同時に対面送金を可能とした<span class="block-note__phrase--emphasis">「さっと割り勘すぐ送金！Yahoo!ウォレット」</span>をリリース．開発，デザイン，仕様策定など全てが同時に進む案件．当時作成したデザインから現在に至るまでにいくつかの刷新，プロモーション用のLP作成など様々な制作物を世に出すことができた
-                </dd>
+                    本件は「Yahoo!ウォレット」という決済サービスを軸に支払いの新しい手段としてユーザー間での対面送金が行える新規アプリを世に提案し，同時にWEBページの刷新を行った案件である．リリースから運用に到るまで，iOS/AndroidアプリのUIの作成，WEBデザイン，販促用ページの実装，リソース管理を担当した．リリース後は運用に従事</dd>
             </dl>
+            <ul class="content-description__text">
+                <li>担当：制作，実装，運用，プロジェクト管理</li>
+                <li>使用ツール：Photoshop/ Illustrator/ sketch</li>
+                <li>期間：2015年 12月 - 2017年 9月</li>
+                <li>メンバー：45人</li>
+                <li><a href="https://wallet.yahoo.co.jp/">URL：https://wallet.yahoo.co.jp/ </a></li>
+            </ul>
             <dl class="content-description__note block-note">
                 <dt class="block-note__title">作業内容</dt>
+                <dd class="block-note__phrase--bold">アプリUI作成</dd>
                 <dd class="block-note__phrase">
-                    シニアデザイナーの指導を元にアプリUIを作成．作業ツールにはsketchを用い，Android・iOS両端末のUIデザイン，アイコンやアプリ内で使用されたイラストを作成した．アプリのプロモーションLP作成時は，ページ内のアニメーション設計を行った．デザイン業務以外では社内の委託の方，派遣の方へのディレクションも実施．リリースに至るまでは約半年を要した．
+                    Android・iOS両端末のUIデザイン，その他アイコンやアプリ内で使用されたイラストを作成
                 </dd>
             </dl>
+            <p class="content-detail__img01"><img src="../img/content--detail03-04.png" width="100%"></p>
+            </div>
+        <div class="content-description">
             <dl class="content-description__note block-note">
-                <dt class="block-note__title">学び</dt>
+                <dd class="block-note__phrase--bold"> WEBページ実装</dd>
                 <dd class="block-note__phrase">
-                    作業に追われ，当時はより効率よく運用するフローなどを考えるところまで至らなかったことが多く，失敗が本当に多かった．自身の改善点が多く見えた時期だった．長期労働と度重なる仕様変更への忍耐力は確実に得られた．
+                    アプリリリース後にはアプリ宣伝用LPを作成し，実装およびアニメーション設計（画像左）<br>サービスページのリデザイン、および実装（画像右）
                 </dd>
             </dl>
-        </div>
+            <ul class="content-detail__img02">
+                <!-- template for the modal component -->
+                  <script type="text/x-template" id="modal-template">
+                    <transition name="modal">
+                      <div class="modal-mask" @click="$emit('close')">
+                        <div class="modal-wrapper">
+                          <div class="modal-container">
+                            <div class="modal-body">
+                              <slot name="body">
+                                <img src="../img/wallet_app.png" width="100%">
+                              </slot>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </transition>
+                  </script>
+                  <script type="text/x-template" id="modal-template2">
+                    <transition name="modal2">
+                      <div class="modal-mask" @click="$emit('close')">
+                        <div class="modal-wrapper">
+                          <div class="modal-container">
+                            <div class="modal-body">
+                              <slot name="body">
+                                <img src="../img/wallet_top.png" width="100%">
+                              </slot>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </transition>
+                  </script>
+  
+                  <!-- app -->
+                  <li class="content-detail__img02-modal">
+                    <div id="modal1">
+                      <img id="show-modal" @click="showModal = true" src="../img/content--detail03-02.png" width="100%">
+                      <p>アプリ宣伝用LP</p>
+                      <p>URL：https://wallet.yahoo.co.jp/promotion/app/</p>
+                      <modal v-if="showModal" @close="showModal = false">
+                      </modal>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="modal2">
+                      <img id="show-modal2" @click="showModal2 = true" src="../img/content--detail03-03.png" width="100%">
+                      <p>サービスページ</p>
+                      <p>URL：https://wallet.yahoo.co.jp/</p>
+                      <modal v-if="showModal2" @close="showModal2 = false">
+                      </modal>
+                    </div>
+                  </li>
+                  <li class="content-detail__info"><span>*画像をクリックすると拡大できます</span></li>
+              </ul>
+        </div>  
     </section>
     <section class="area-footer">
         <div class="contenr-footer">
