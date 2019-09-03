@@ -48,71 +48,60 @@
                 </dd>
             </dl>
             <ul class="content-detail__img02">
-                <!-- template for the modal component -->
-                  <script type="text/x-template" id="modal-template">
-                    <transition name="modal">
-                      <div class="modal-mask" @click="$emit('close')">
-                        <div class="modal-wrapper">
-                          <div class="modal-container">
-                            <div class="modal-body">
-                              <slot name="body">
-                                <img src="../img/wallet_app.png" width="100%">
-                              </slot>
-                            </div>
+              <!-- template for the modal component -->
+                <script type="text/x-template" id="modal-template">
+                  <transition name="modal">
+                    <div class="modal-mask" @click="$emit('close')">
+                      <div class="modal-wrapper">
+                        <div class="modal-container">
+                          <div class="modal-body">
+                            <slot name="body">
+                              <img src="../img/wallet_app.png" width="100%">
+                            </slot>
                           </div>
                         </div>
                       </div>
-                    </transition>
-                  </script>
-                  <script type="text/x-template" id="modal-template2">
-                    <transition name="modal2">
-                      <div class="modal-mask" @click="$emit('close')">
-                        <div class="modal-wrapper">
-                          <div class="modal-container">
-                            <div class="modal-body">
-                              <slot name="body">
-                                <img src="../img/wallet_top.png" width="100%">
-                              </slot>
-                            </div>
+                    </div>
+                  </transition>
+                </script>
+                <script type="text/x-template" id="modal-template2">
+                  <transition name="modal2">
+                    <div class="modal-mask" @click="$emit('close')">
+                      <div class="modal-wrapper">
+                        <div class="modal-container">
+                          <div class="modal-body">
+                            <slot name="body">
+                              <img src="../img/wallet_top.png" width="100%">
+                            </slot>
                           </div>
                         </div>
                       </div>
-                    </transition>
-                  </script>
-  
-                  <!-- app -->
-                  <li class="content-detail__img02-modal">
-                    <div id="modal1">
-                      <img id="show-modal" @click="showModal = true" src="../img/content--detail03-02.png" width="100%">
-                      <p>アプリ宣伝用LP</p>
-                      <p>URL：https://wallet.yahoo.co.jp/promotion/app/</p>
-                      <modal v-if="showModal" @close="showModal = false">
-                      </modal>
                     </div>
-                  </li>
-                  <li>
-                    <div id="modal2">
-                      <img id="show-modal2" @click="showModal2 = true" src="../img/content--detail03-03.png" width="100%">
-                      <p>サービスページ</p>
-                      <p>URL：https://wallet.yahoo.co.jp/</p>
-                      <modal v-if="showModal2" @close="showModal2 = false">
-                      </modal>
-                    </div>
-                  </li>
-                  <li class="content-detail__info"><span>*画像をクリックすると拡大できます</span></li>
-              </ul>
-        </div>  
-    </section>
-    <section class="area-footer">
-        <div class="contenr-footer">
-            <ul class="contenr-footer__list">
-                <li>tool：Photoshop/ Illustrator/ sketch</li>
-                <li>lang：JavaScript/html/css</li>
-                <li>term：January to May of 2016, a 6 month.</li>
-                <li>role：designer</li>
-                <li>ULR：<a href="https://wallet.yahoo.co.jp/">https://wallet.yahoo.co.jp/</a> / <a href="https://wallet.yahoo.co.jp/promotion/app/">https://wallet.yahoo.co.jp/promotion/app/</a></li>
+                  </transition>
+                </script>
+
+                <!-- app -->
+                <li class="content-detail__img02-modal">
+                  <div id="modal1">
+                    <img id="show-modal" @click="showModal = true" src="../img/content--detail03-02.png" width="100%">
+                    <p>アプリ宣伝用LP</p>
+                    <p>URL：https://wallet.yahoo.co.jp/promotion/app/</p>
+                    <modal v-if="showModal" @close="showModal = false">
+                    </modal>
+                  </div>
+                </li>
+                <li>
+                  <div id="modal2">
+                    <img id="show-modal2" @click="showModal2 = true" src="../img/content--detail03-03.png" width="100%">
+                    <p>サービスページ</p>
+                    <p>URL：https://wallet.yahoo.co.jp/</p>
+                    <modal v-if="showModal2" @close="showModal2 = false">
+                    </modal>
+                  </div>
+                </li>
+                <li class="content-detail__info"><span>*画像をクリックすると拡大できます</span></li>
             </ul>
-        </div>
+        </div>  
     </section>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="../js/common.js"></script>

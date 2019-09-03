@@ -39,18 +39,60 @@
                   本件ではビジュアル作成，申し込みページのコーディングを実施．ビジュアル作成ツールとしてはPhotoshopおとびIllustratorを使用 既存ページの運用や改修、新規ページはMTを用いてリリースから運用を実施
                 </dd>
             </dl>
-            <div class="content-detail__img02">
-              <dl>
-                <dt><img src="../img/content--detail04-02.png" width="100%"></dt>
-                <dd>口座開設用LP</dd>
-                <dd><a href="https://bank.yahoo.co.jp/">URL：https://bank.yahoo.co.jp/</a></dd>
-              </dl>
-              <dl>
-                <dt><img src="../img/content--detail04-03.png" width="100%"></dt>
-                <dd>Visaカード訴求LP</dd>
-                <dd><a href="URL：https://bank.yahoo.co.jp/">URL：https://bank.yahoo.co.jp/promotion/oversea/</a></dd>
-              </dl>
-            </div>
+            <ul class="content-detail__img02">
+                <!-- template for the modal component -->
+                  <script type="text/x-template" id="modal-template">
+                    <transition name="modal">
+                      <div class="modal-mask" @click="$emit('close')">
+                        <div class="modal-wrapper">
+                          <div class="modal-container">
+                            <div class="modal-body">
+                              <slot name="body">
+                                <img src="../img/bank.png" width="100%">
+                              </slot>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </transition>
+                  </script>
+                  <script type="text/x-template" id="modal-template2">
+                    <transition name="modal2">
+                      <div class="modal-mask" @click="$emit('close')">
+                        <div class="modal-wrapper">
+                          <div class="modal-container">
+                            <div class="modal-body">
+                              <slot name="body">
+                                <img src="../img/bank-visa.png" width="100%">
+                              </slot>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </transition>
+                  </script>
+  
+                  <!-- app -->
+                  <li class="content-detail__img02-modal">
+                    <div id="modal1">
+                      <img id="show-modal" @click="showModal = true" src="../img/content--detail04-02.png" width="100%">
+                      <p>口座開設用LP</p>
+                      <p><a href="https://bank.yahoo.co.jp/">URL：https://bank.yahoo.co.jp/</a></p>
+                      <modal v-if="showModal" @close="showModal = false">
+                      </modal>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="modal2">
+                      <img id="show-modal2" @click="showModal2 = true" src="../img/content--detail04-03.png" width="100%">
+                      <p>Visaカード訴求LP</p>
+                      <p><a href="https://bank.yahoo.co.jp/promotion/oversea/">URL：https://bank.yahoo.co.jp/promotion/oversea/</a></p>
+                      <modal v-if="showModal2" @close="showModal2 = false">
+                      </modal>
+                    </div>
+                  </li>
+                  <li class="content-detail__info"><span>*画像をクリックすると拡大できます</span></li>
+              </ul>
         </div>
         <div class="content-description">
             <dl class="content-description__note block-note">
@@ -62,5 +104,7 @@
             <p class="content-detail__img01"><img src="../img/content--detail04-04.png" width="100%"></p>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 </html>
