@@ -15,7 +15,31 @@
         <div class="content-detail">
             <h1 class="content-detail__heading">ポイントサイトリニューアル</h1>
             <p class="content-detail__text">2015</p>
+            <p class="content-detail__text">https://points.yahoo.co.jp/</p>
             <p class="content-detail__img01"><img src="../img/content--detail-01.png" width="100%"></p>
+            <script type="text/x-template" id="modal-template">
+              <transition name="modal">
+                  <div class="modal-mask" @click="$emit('close')">
+                  <div class="modal-wrapper">
+                      <div class="modal-container">
+                      <div class="modal-body">
+                          <slot name="body">
+                          <img src="../img/point.png" width="100%">
+                          </slot>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </transition>
+            </script>
+            <p class="content-detail__img01 content-detail__img02-modal">
+              <div id="modal1">
+                <img id="show-modal" @click="showModal = true" src="../img/content--detail01-02.png" width="100%">
+                <modal v-if="showModal" @close="showModal = false">
+                </modal>
+              </div>
+            </p>
+            <p class="content-detail__info"><span>*画像をクリックすると拡大できます</span></p>
         </div>
     </section><!-- area-detail -->  
     <section class="area-description">
@@ -23,33 +47,30 @@
             <dl class="content-description__note block-note">
                 <dt class="block-note__title">概要</dt>
                 <dd class="block-note__phrase">
-                    部署に配属されて初めて着手した案件。ヤフーのIDを持つユーザーは手持ちのＴポイントカードを登録することができる．登録するとポイント数が確認できると同時によりサービス利用でよりお得に効率よくポイントを貯めることができる，という訴求をしている．しかしスマートフォン（以降はSPと表記）向けにページは最適化されておらずPCで表示している内容をそのまま表示するにとどまっていた．そこで，掲載要素の整理とSP向けページのデザインリニューアルを実施した．
+                  本件はヤフーのIDを持つユーザーは手持ちのＴポイントカードを登録するとポイント数が確認が行えるサービスで，スマートフォン（以降はSPと表記）向けにページは最適化されておらずPCで表示している内容をそのまま表示するにとどまっていた．そこで，掲載要素の整理とSP向けページのデザインリニューアルを実施しスマホ向けのコンテンツを整備を行った．
                 </dd>
-            </dl>
+            </dl>            
+            <ul class="content-description__text">
+                <li>担当：ビジュアルデザイン</li>
+                <li>使用ツール：Photoshop/ Illustrator</li>
+                <li>期間：2015年07月 – 2015年09月</li>
+                <li>メンバー：3人</li>
+                <li><a href="https://points.yahoo.co.jp/">URL：https://points.yahoo.co.jp/</a></li>
+            </ul>
             <dl class="content-description__note block-note">
                 <dt class="block-note__title">作業内容</dt>
+                <dd class="block-note__phrase--bold">サービスページビジュアル設計</dd>
                 <dd class="block-note__phrase">
-                    ページ全体のコンセプトの設計，MV作成，既存ページでPC表示のみだったものに関してはSP向けのデザインを新規作成．PhotoshopおよびIllustratorをデザイン作成時のツールとして用いた．また作業時間はレビューを含めて1週間を要した．
+                    サービスページのリニューアルでのゴールは，「SP経由の登録を増やす」ことがメインであった．しかし，SPページはポイントを意識的に貯めるユーザーにも，登録を行おうというユーザーのどちらにもアプローチがかけられていなかった．サービス登録を行うメリットである「カードを登録するとポイントを貯めるられる」という点をどう表現するかを検討し，いくつかの案の中から，「カードをSPページに登録するとポイントが積み上がる」ことを表現した内容を採用した．こちらは現在も使用されている．
                 </dd>
-            </dl>
-            <dl class="content-description__note block-note">
-                <dt class="block-note__title">学び</dt>
                 <dd class="block-note__phrase">
-                    クエリやユーザーデータを見ながらコンセプト設計ができたこと．リリースできたこと． 当時はhtmlもcssも書けなかったのでテンプレート作成から実装までをお任せしたことが当時は大変に悔しかった．
+                    デザイン作業を行うにあたって，ページ全体の構成の検討，Photoshopを用いたMVやバナーの作成を行った．今回の作業によってコンテンツの無駄の排除と訴求内容の整理を行うに至った．
                 </dd>
             </dl>
         </div>
     </section>
-    <section class="area-footer">
-        <div class="contenr-footer">
-            <ul class="contenr-footer__list">
-                <li>tool：Photoshop/ Illustrator</li>
-                <li>term：Mid June of 2015, a week</li>
-                <li>role：designer</li>
-                <li>ULR：<a href="https://points.yahoo.co.jp/">https://points.yahoo.co.jp/</a></li>
-            </ul>
-        </div>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 </html>
 
