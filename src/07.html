@@ -12,36 +12,53 @@
 <body>
     <section class="area-detail">
         <div class="content-detail">
-            <h1 class="content-detail__heading">OKIPPA アプリUI作成</h1>
-            <p class="content-detail__text">2018</p>
-            <p class="content-detail__img01"><img src="../img/content--detail07-01.png" width="100%"></p>
-            <p class="content-detail__img01"><img src="../img/content--detail07-02.png" width="100%"></p>
+          <h1 class="content-detail__heading">OKIPPA アプリUI作成</h1>
+          <p class="content-detail__text">2018</p>
+          <p class="content-detail__img01"><img src="../img/content--detail07-01.png" width="100%"></p>
         </div>
     </section><!-- area-detail -->  
     <section class="area-description">
-        <div class="content-description">
-            <dl class="content-description__note block-note">
-                <dt class="block-note__title">概要</dt>
-                <dd class="block-note__phrase">
-                    副業先が請け負っていたOKIPPAという置配サービスでは，荷物の配送状況や履歴を確認できる一般ユーザー向けのアプリを配信していた．本件では，サービス内で新規で作成される課金項目の登録導線のUIを作成した．
-                </dd>
-            </dl>
-            <dl class="content-description__note block-note">
-                <dt class="block-note__title">作業内容</dt>
-                <dd class="block-note__phrase">
-                    本件では，登録導線のUIを作成した．ビジュアル作成ツールとしてはsketchを用い，zeplinを用いてエンジニアとのデザイン連携を実施．仕様確定からデザイン作成には1週間を要した．
-                </dd>
-            </dl>
-        </div>
+      <div class="content-description">
+          <dl class="content-description__note block-note">
+            <dt class="block-note__title">概要</dt>
+            <dd class="block-note__phrase">
+              副業先として担当したOKIPPAアプリのUI作成を実施。<br>
+              本件では，サービス内で新規で作成される課金項目の登録導線のUI、イラスト作成．UI作成にはsketchを用い，zeplinを用いてエンジニアとのデザイン連携し開発を進めた。
+            </dd>
+          </dl>
+          <ul class="content-description__text">
+            <li>担当：UI作成</li>
+            <li>使用ツール：sketch / zplin</li>
+            <li>期間：2018年10月 – 2018年12月</li>
+            <li>メンバー：3人</li>
+            <li><a href="https://www.okippa.life/">URL：https://www.okippa.life/</a></li>
+          </ul>
+          <script type="text/x-template" id="modal-template">
+            <transition name="modal">
+                <div class="modal-mask" @click="$emit('close')">
+                <div class="modal-wrapper">
+                    <div class="modal-container">
+                    <div class="modal-body">
+                        <slot name="body">
+                        <img src="../img/content--detail07-02.png" width="100%">
+                        </slot>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </transition>
+          </script>
+          <p class="content-detail__img01 content-detail__img02-modal">
+            <div id="modal1">
+              <img id="show-modal" @click="showModal = true" src="../img/content--detail07-02.png" width="100%">
+              <modal v-if="showModal" @close="showModal = false">
+              </modal>
+            </div>
+          </p>
+          <p class="content-detail__info"><span>*画像をクリックすると拡大できます</span></p>
+      </div>
     </section>
-    <section class="area-footer">
-        <div class="contenr-footer">
-            <ul class="contenr-footer__list">
-                <li>tool：sketch</li>
-                <li>role：designer</li>
-                <li>ULR：<a href="https://www.okippa.life/">https://www.okippa.life/</a></li>
-            </ul>
-        </div>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 </html>
