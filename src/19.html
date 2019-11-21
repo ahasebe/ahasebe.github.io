@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ahasebe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../img/ahasebe2.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:600,700,800" rel="stylesheet">
+</head>
+<body>
+    <section class="area-detail">
+        <div class="content-detail">
+            <nav class="content-detail__menu">
+              <p class="content-detail__menu--list"><a href="../index.html">Proposition：一覧に戻る</a></p>
+            </nav>
+            <h1 class="content-detail__heading">アプリプロモーションLP</h1>
+            <p class="content-detail__text">2019</p>
+            <p class="content-detail__img01"><img src="../img/content--detail20-01.png" width="100%"></p>
+        </div>
+    </section><!-- area-detail -->  
+    <section class="area-description">
+        <div class="content-description">
+            <dl class="content-description__note block-note">
+                <dt class="block-note__title">概要</dt>
+                <dd class="block-note__phrase">新規サービスのアプリダウンロード訴求を目的としたLPの実装、テスト、リリースまでを担当</dd>
+            </dl>
+            <ul class="content-description__text">
+                <li>担当：実装、テスト、リリース</li>
+                <li>使用ツール：VSC</li>
+                <li>環境：HTLM / CSS  / jQuery</li>
+                <li>期間：2019年10月 </li>
+                <li>メンバー：5人</li>
+                <li>URL：<a href="https://info-premium.yahoo.co.jp/promo/paypayfleamarket/index.html">https://info-premium.yahoo.co.jp/promo/paypayfleamarket/index.html</a></li>
+            </ul>
+        </div>
+        <div class="content-description">
+            <dl class="content-description__note block-note">
+                <dt class="block-note__title">作業内容</dt>
+                <dd class="block-note__phrase--bold">実装とリリース</dd>
+                <dd class="block-note__phrase">
+                  実装に際して、当該LPはCVを計測しながら、デザインを変えていくことが想定されていたので、構成は各項目ごとにsection構成を基本とした。PCページに限ってはMVにフリップアニメーション実装した。リリースに際してはMTを用いて行った。
+                </dd>
+            </dl>
+        </div>
+        <div class="content-description">
+          <script type="text/x-template" id="modal-template">
+           <transition name="modal">
+               <div class="modal-mask" @click="$emit('close')">
+               <div class="modal-wrapper">
+                   <div class="modal-container">
+                   <div class="modal-body">
+                       <slot name="body">
+                       <img src="../img/payflm.png" width="100%">
+                       </slot>
+                   </div>
+                   </div>
+               </div>
+               </div>
+           </transition>
+         </script>
+         <p class="content-detail__img01 content-detail__img02-modal">
+           <div id="modal1">
+             <img id="show-modal" @click="showModal = true" src="../img/content--detail20-02.png" width="100%">
+             <modal v-if="showModal" @close="showModal = false">
+             </modal>
+           </div>
+         </p>
+         <p class="content-detail__info"><span>*画像をクリックすると拡大できます</span></p>
+        </div>
+        <div class="content-description">
+            <p class="content-detail__img01"><img src="../img/pflm.gif" width="100%"></p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

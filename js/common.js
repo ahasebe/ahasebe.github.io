@@ -22,3 +22,7 @@ new Vue({
     }
   }
 });
+
+new Vue({
+  el: "#top"
+});

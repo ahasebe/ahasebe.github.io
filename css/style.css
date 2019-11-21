@@ -227,6 +227,11 @@ a:visited {
     max-width: 850px;
     margin: 20px auto 0;
 }
+.content-detail__menu--list {
+    font-size: 10px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
 .content-detail__list {
     text-align: right;
     z-index: 10;
@@ -466,3 +471,18 @@ a:visited {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   } */
+
+  #return-top {
+    background-color: #4a4a4a;
+    border-radius: 50%;
+    bottom: 50px;
+    color: #fff;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    outline: 0;
+    position: fixed;
+    right: 50px;
+    text-align: center;
+    width: 50px;
+}
