@@ -100,7 +100,6 @@
                     <p><a href="https://wallet.yahoo.co.jp/">URL：https://wallet.yahoo.co.jp/</a></p>
                     <modal v-if="showModal2" @close="showModal2 = false">
                     </modal>
-                  </div>
                 </li>
                 <li class="content-detail__info"><span>*画像をクリックすると拡大できます</span></li>
             </ul>
@@ -109,11 +108,11 @@
                 <li><img src="../img/wallet_sp.png" width="100%"></li>
             </ul>
         </div>
-        <div id="app">
-          <a href="#" id="return-top" v-scroll-to="'#top'">Top</a>
-        </div> 
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="../js/common.js"></script>
-</body>
+      <div id="app">
+      <a href="#" id="return-top" v-show="show" v-scroll-to="'#top'">TOP</a>
+      </div> 
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="../js/common.js"></script>
+  </body>
 </html>

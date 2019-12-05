@@ -11,10 +11,10 @@
 </head>
 <body>
     <section class="area-detail">
-        <nav class="content-detail__menu">
-          <p class="content-detail__menu--list"><a href="../index.html">Proposition：一覧に戻る</a></p>
-        </nav>
         <div class="content-detail">
+          <nav class="content-detail__menu">
+            <p class="content-detail__menu--list"><a href="../index.html">Proposition：一覧に戻る</a></p>
+          </nav>
           <h1 class="content-detail__heading">OKIPPA アプリUI作成</h1>
           <p class="content-detail__text">2018</p>
           <p class="content-detail__img01"><img src="../img/content--detail07-01.png" width="100%"></p>
@@ -60,8 +60,12 @@
           </p>
           <p class="content-detail__info"><span>*画像をクリックすると拡大できます</span></p>
       </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="../js/common.js"></script>
+    </div>
+    <div id="app">
+    <a href="#" id="return-top" v-show="show" v-scroll-to="'#top'">TOP</a>
+    </div> 
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="../js/common.js"></script>
 </body>
 </html>

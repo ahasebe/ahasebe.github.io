@@ -24,5 +24,8 @@ new Vue({
 });
 
 new Vue({
-  el: "#top"
+  el: "#top",
+    data: {
+    show: true
+  }
 });
