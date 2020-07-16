@@ -55,7 +55,7 @@ a:visited {
 .content-mv {
     background: url(../img/mv.png)no-repeat center;
     background-size: 1440px;
-    height: 345px;
+    height: 260px;
     max-width: 950px;
     margin: 0 auto;
     position: relative;
@@ -99,7 +99,7 @@ a:visited {
         background: url(../img/mv.png)no-repeat center;
         background-size: 1440px;
         background-color: #d0e7ec;
-        height: 345px;
+        height: 260px;
     }
     .content-mv {
         max-width: 950px;
