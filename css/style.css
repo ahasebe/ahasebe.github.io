@@ -278,7 +278,7 @@ a:visited {
     margin-top: 70px;
 }
 .content-description {
-    max-width: 850px;
+    max-width: 820px;
     margin: 0 auto;
 }
 .content-description__heading {
@@ -296,7 +296,7 @@ a:visited {
 }
 .block-note__title {
     margin-top: 40px;
-    /* text-align: center; */
+    text-align: center;
 }
 .block-note__phrase {
     margin-top: 10px;
