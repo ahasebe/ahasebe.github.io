@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ahasebe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../img/ahasebe2.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:600,700,800" rel="stylesheet">
+</head>
+<body>
+    <section id="top" class="area-detail">
+        <div class="content-detail">
+            <nav class="content-detail__menu">
+              <p class="content-detail__menu--list"><a href="../index.html">Proposition：一覧に戻る</a></p>
+            </nav>
+            <h1 class="content-detail__heading">PayPay STEP / コマース利用促進ロイヤリティープログラムの立ち上げ</h1>
+            <p class="content-detail__text">2020</p>
+            <p class="content-detail__img01"><img src="../img/content--detail23-01.png" width="100%"></p>
+        </div>
+    </section><!-- area-detail -->  
+    <section class="area-description">
+        <div class="content-description">
+            <dl class="content-description__note block-note">
+                <dt class="block-note__title">概要</dt>
+                <dd class="block-note__phrase">自社のコマースサービスの利用促進を目的とした新規サービスの立ち上げ、リリースに向けて、エンジニア、企画との連携を行いながらページのコーディング作業を実施。<br>
+                 当該サービスは、コマースサービスの利用、ロイヤリティープログラム上の条件を達成条件に応じて、ユーザーのポイント付与率を変えて還元する仕組みで運用されている。リリース以降は、デザイン改善、要件策定、コードのリファクタリング、新規機能の追加実装などを主として実施。また、今後の運用向けて、コンポーネント設計書、コーディングルールなどのドキュメント作成を行う。</dd>
+                <dd class="block-note__phrase">I have carried out page coding and worked in collaboration with engineers and planner for the launch and release of new services aimed at promoting the use of our own commerce services.</dd>
+            </dl>
+            <ul class="content-description__text">
+                <li>担当：ベージ実装 [role]Page development</li>
+                <li>使用ツール：photoshop</li>
+                <li>言語：Vue.js Nuxt.js</li>
+                <li>期間：2020年9月-</li>
+                <li>メンバー：4人（デザイナーメンバーのみの数字）</li>
+                <li><a href="https://paypaystep.yahoo.co.jp/">URL：https://paypaystep.yahoo.co.jp/ </a></li>
+            </ul>
+            <dl class="content-description__note block-note">
+             <script type="text/x-template" id="modal-template">
+               <transition name="modal">
+                   <div class="modal-mask" @click="$emit('close')">
+                   <div class="modal-wrapper">
+                       <div class="modal-container">
+                       <div class="modal-body">
+                           <slot name="body">
+                           <img src="../img/step1.png" width="100%">
+                           </slot>
+                       </div>
+                       </div>
+                   </div>
+                   </div>
+               </transition>
+             </script>
+             <dt class="block-note__title">作業内容</dt>
+             <dd class="block-note__phrase--bold">ページ実装</dd>
+             <dd class="block-note__phrase">
+              ページ実装、コンポーネント設計、コーディングルールなど運用に必要なドキュメント整備<br>
+              ページを訪問するユーザーの属性に応じて構成を出し分け、動的に稼働できるように実装。全てのページはレスポンシブ設計されている。
+             </dd>
+             <dd class="content-detail__img01 content-detail__img02-modal">
+               <div id="modal1">
+                 <img id="show-modal" @click="showModal = true" src="../img/content--detail23-02.png" width="100%">
+                 <p class="content-detail__info"><span>*画像をクリックすると拡大できます</span></p>
+                 <modal v-if="showModal" @close="showModal = false">
+                 </modal>
+               </div>
+               <dd><p class="block-note__phrase"><a href="../img/component.pdf">コンポーネント設計書例（PDF）</a></p></dd>
+             </dd>
+            </dl>
+            <dl class="content-description__note block-note">
+              <script type="text/x-template" id="modal-template2">
+                <transition name="modal2">
+                  <div class="modal-mask" @click="$emit('close')">
+                  <div class="modal-wrapper">
+                      <div class="modal-container">
+                      <div class="modal-body">
+                          <slot name="body">
+                          <img src="../img/step2.png" width="100%">
+                          </slot>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </transition>
+            </script>
+            <dt class="block-note__phrase--bold">各サービスへのテンプレート連携</dt>
+            <dd class="block-note__phrase">
+              サービスのメインとなるページ以外にも、トンマナを統一したで残展開を目的とした他のコマースサービス用のテンプレートを実装し、展開
+            </dd>
+            <dd class="content-detail__img01 content-detail__img02-modal">
+              <div id="modal2">
+                <img id="show-modal2" @click="showModal2 = true" src="../img/content--detail23-03.png" width="100%">
+                <p class="content-detail__info"><span>*画像をクリックすると拡大できます</span></p>
+                <modal v-if="showModal2" @close="showModal2 = false">
+                </modal>
+              </div>
+            </dd>
+            </dl>
+        </div>
+      <div id="app">
+      <a href="#" id="return-top" v-show="show" v-scroll-to="'#top'">TOP</a>
+      </div> 
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="../js/common.js"></script>
+  </body>
+</html>
