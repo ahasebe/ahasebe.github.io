@@ -56,7 +56,7 @@
              <dd class="block-note__phrase--bold">ページ実装</dd>
              <dd class="block-note__phrase">
               ページ実装、コンポーネント設計、コーディングルールなど運用に必要なドキュメント整備<br>
-              ページを訪問するユーザーの属性に応じて構成を出し分け、動的に稼働できるように実装。全てのページはレスポンシブ設計されている。
+              ページを訪問するユーザーの属性に応じて構成を出し分け、レスポンシブ設計。
              </dd>
              <dd class="content-detail__img01 content-detail__img02-modal">
                <div id="modal1">
@@ -89,13 +89,19 @@
               サービスのメインとなるページ以外にも、トンマナを統一したで残展開を目的とした他のコマースサービス用のテンプレートを実装し、展開
             </dd>
             <dd class="content-detail__img01 content-detail__img02-modal">
-              <div id="modal2">
+              <!-- <div id="modal2">
                 <img id="show-modal2" @click="showModal2 = true" src="../img/content--detail23-03.png" width="100%">
                 <p class="content-detail__info"><span>*画像をクリックすると拡大できます</span></p>
                 <modal v-if="showModal2" @close="showModal2 = false">
                 </modal>
-              </div>
+              </div> -->
             </dd>
+            </dl>
+            <dl class="content-description__note block-note">
+              <dt class="block-note__phrase--bold">改善施策</dt>
+              <dd class="block-note__phrase">他サービスへの流入を増やす目的で、ページ内の構成を変更<br>
+              改修後、CTRは平均0.04から、0.1程度の改善</dd>
+              <dd class="content-detail__img01"><img id="show-modal" src="../img/content--detail23-04.png" width="100%"></dd>
             </dl>
         </div>
       <div id="app">
