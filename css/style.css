@@ -364,6 +364,11 @@ a:visited {
     margin-top: 40px;
     font-size: 14px;
 }
+.block-note__phrase--subtitle {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
 .block-note__detail {
     margin-top: 10px;
     font-size: 12px;
