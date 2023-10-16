@@ -55,7 +55,7 @@ a:visited {
 }
 .content-mv {
     background: url(../img/mv.png)no-repeat center;
-    background-size: 1440px;
+    background-size: 1100px;
     height: 260px;
     max-width: 950px;
     margin: 0 auto;
@@ -98,15 +98,13 @@ a:visited {
 @media screen and (max-width: 870px) {
     .area-mv {
         background: url(../img/mv.png)no-repeat center;
-        background-size: 1440px;
-        background-color: #d0e7ec;
+        background-size: 1100px;
+        background-color: #A8C2E0;
         height: 260px;
     }
     .content-mv {
         max-width: 950px;
         margin: 0 auto;
-        position: relative;
-        z-index: 1;
     }
     .content-list {
         margin: 40px 20px 0 0;
