@@ -20,17 +20,49 @@
       <nav class="content-detail__menu">
         <p class="content-detail__menu--list"><a href="../index.html">一覧に戻る</a></p>
       </nav>
-      <h1 class="content-detail__heading">副業2022年分</h1>
-      <p class="content-detail__text">2022年度に作ったもの</p>
+      <h1 class="content-detail__heading">副業</h1>
   </div>
 </section><!-- area-detail -->  
 <section class="area-product area-tips">
+  <div class="content-product content-description">
+    <div class="content-description__note block-note">
+      <!-- template for the modal component -->
+      <script type="text/x-template" id="modal-template">
+       <transition name="modal">
+         <div class="modal-mask" @click="$emit('close')">
+           <div class="modal-wrapper">
+             <div class="modal-container">
+               <div class="modal-body">
+                 <slot name="body">
+                   <img src="../img/sidejob/anyflow.png" width="100%">
+                 </slot>
+               </div>
+             </div>
+           </div>
+         </div>
+       </transition>
+     </script>
+    <p class="content-detail__img01 content-detail__img02-modal">
+      <div id="modal1">
+        <img id="show-modal" @click="showModal = true" src="../img/sidejob/content--detail26-01.png" width="100%">
+        <p class="content-detail__info"><span>こちらはクリックまたはタップすると詳細が表示されます</span></p>
+        <modal v-if="showModal" @close="showModal = false">
+        </modal>
+      </div>
+     </p>
+   </div>
+  </div>
   <div class="content-product content-description block-sidejob">
     <ul class="block-sidejob__detail">
+      <li class="block-sidejob__img"><img src="../img/sidejob/anyflow1.png" width="100%"></li>
+      <li class="block-sidejob__img"><img src="../img/sidejob/anyflow2.png" width="100%"></li>
+      <li class="block-sidejob__img"><img src="../img/sidejob/moneiro.png" width="100%"></li>
+      <li class="block-sidejob__img"><img src="../img/sidejob/ecrowd1.png" width="100%"></li>
       <li class="block-sidejob__img"><img src="../img/sidejob/Desktop-1.png" width="100%"></li>
       <li class="block-sidejob__img"><img src="../img/sidejob/Desktop-3.png" width="100%"></li>
       <li class="block-sidejob__img"><img src="../img/sidejob/Desktop-4.png" width="100%"></li>
       <li class="block-sidejob__img"><img src="../img/sidejob/Desktop-5.png" width="100%"></li>
+      <li class="block-sidejob__img"><img src="../img/sidejob/beer_girl.png" width="100%"></li>
     </ul>
   </div>
   <a href="#" id="return-top" v-show="show" v-scroll-to="'#top'">TOP</a>
