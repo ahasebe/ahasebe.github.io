@@ -41,11 +41,11 @@ ol, ul {
     list-style: none; 
 }
 a {
-    color: #646464;
+    color: #90B3DF;
     text-decoration: none;
 }
 a:visited {
-    color: #646464;
+    color: #90B3DF;
 }
 /* area-mv */
 .area-mv {
@@ -315,10 +315,6 @@ a:visited {
     text-align: center;
     color: #9b9b9b;
 }
-.content-detail__link a {
-    text-decoration: none;
-    color: #9b9b9b;
-}
 .content-detail__heading {
     margin-top: 40px;
     text-align: center;
@@ -361,6 +357,11 @@ a:visited {
     text-align: left;
 }
 .block-note__phrase {
+    /* margin-top: 10px; */
+    font-size: 14px;
+    line-height: 1.5;
+}
+.block-note__phrase a{
     /* margin-top: 10px; */
     font-size: 14px;
     line-height: 1.5;
