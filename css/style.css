@@ -322,11 +322,12 @@ a:visited {
 .content-detail__heading {
     margin-top: 40px;
     text-align: center;
+    font-size: 18px;
     font-weight: bold;
 }
 .content-detail__text {
     margin-top: 20px;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     color: #9B9B9B;
 }
@@ -334,12 +335,15 @@ a:visited {
     margin-top: 70px;
 }
 .content-description {
-    max-width: 820px;
+    max-width: 850px;
     margin: 0 auto;
 }
 .content-description__heading {
     margin: 50px 0 0;
     text-align: center;
+}
+.content-description__note {
+    margin-top: 20px;
 }
 .content-description__img {
     width: 400px;
@@ -352,12 +356,13 @@ a:visited {
 }
 .block-note__title {
     margin-top: 40px;
+    font-size: 16px;
     font-weight: bold;
     text-align: left;
 }
 .block-note__phrase {
-    margin-top: 10px;
-    font-size: 12px;
+    /* margin-top: 10px; */
+    font-size: 14px;
     line-height: 1.5;
 }
 .block-note__phrase--emphasis {
@@ -369,13 +374,16 @@ a:visited {
 }
 .block-note__phrase--subtitle {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 .block-note__detail {
     margin-top: 10px;
     font-size: 12px;
     line-height: 1.6;
+}
+.block-note__img {
+    margin-top: 10px;
 }
 .area-footer {
     background-color: #f6f6f6;
@@ -549,19 +557,17 @@ a:visited {
   } */
 
   #return-top {
+    padding: 4px 8px;
     background-color: #B8C6CE;
     border-radius: 3px;
     bottom: 16px;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
-    height: 26px;
-    line-height: 26px;
     outline: 0;
     position: fixed;
     right: 16px;
     text-align: center;
-    width: 50px;
 }
 
 .block-sidejob__detail {
