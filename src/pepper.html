@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <title>ahasebe</title>
+    <meta name="description" content="ahasebe portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta property="og:url" content="https://ahasebe.github.io/" />
+    <meta property="og:title" content="ahasebe" />
+    <meta property="og:image" content="img/ahasbe_ogp.png" />
+    <meta property="og:description" content="ahasebe portfolio / はせべのポートフォリオ" />
+    <link rel="shortcut icon" href="../img/ahasebe.png">
+    <link rel="stylesheet" href="../CSS/Style.css">
+        <link rel="stylesheet" href="../CSS/work.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="work">
+    <h1 class="work_title">ポイントサイトリニューアル</h1>
+    <p class="work_img"><img src="../img/work/Yahoo/point/point1.png" alt="実装した端末の画像" width="15%"></p>
+    <div class="work_detail">
+      <dl class="work_disctiption">
+          <dt class="work_heading">概要</dt>
+          <dd class="work_phrase">
+            実店舗「Pepper」とWebキャンペーンを連動させ、Pepperの認知向上とソフトバンクショップへの来店促進、さらにTポイントがYahoo!ショッピングをはじめとするYahoo! JAPANの各サービスで利用できることの認知拡大を目的に、全3弾で展開され、第1弾ではプレス掲載も実現した統合プロモーション施策。
+          </dd>
+      </dl>            
+      <ul class="work-phrase">
+          <li>担当：ビジュアルデザイン</li>
+          <li>使用ツール：Photoshop/ Illustrator</li>
+          <li>期間：2015年07月 – 2015年09月</li>
+          <li>メンバー：3人</li>
+          <li>URL：https://about.yahoo.co.jp/pr/release/2015/08/05a/ (クローズ済み)</li>
+      </ul>
+      <dl class="work_disctiption">
+          <dt class="work_heading">作業内容</dt>
+          <dd class="work_phrase">
+            本施策は、Web単体で完結するキャンペーンではなく実店舗と連動する内容であったため、ユーザーが行動までを具体的にイメージできる構成が必要だった。
+            そこで、通常のキャンペーンサイトのように文言中心で流れを説明するのではなく、イラストを多用した視覚的に理解しやすい説明方針を採用した。この表現手法は、全3回にわたるキャンペーンを通して一貫して用いている。
+            <br>
+            また、プレス掲載とは別に、ユーザー流入をさらに促進する目的で、他サービスからキャンペーンへ誘導するバナーを制作した。
+            デザイン制作には、PhotoshopおよびIllustratorを使用した。</dd>
+      </dl>
+    </div>
+  </section>
+  <section class="area-detail">
+    <div class="content-detail">
+      <script type="text/x-template" id="modal-template">
+        <transition name="modal">
+            <div class="modal-mask" @click="$emit('close')">
+            <div class="modal-wrapper">
+                <div class="modal-container">
+                <div class="modal-body">
+                    <slot name="body">
+                    <img src="../img/work/Yahoo/point/point3.png" width="100%">
+                    </slot>
+                </div>
+                </div>
+            </div>
+            </div>
+        </transition>
+      </script>
+      <p class="content-detail__img01 content-detail__img02-modal">
+        <div id="modal1">
+          <img id="show-modal" @click="showModal = true" src="../img/work/Yahoo/point/point2.png" width="100%">
+          <modal v-if="showModal" @close="showModal = false">
+          </modal>
+        </div>
+      </p>
+      <p class="content-detail__info"><span>*画像をクリックすると拡大できます</span></p>
+    </div>
+  </section><!-- area-detail -->  
+  <section class="footer">
+    <div>© AHASEBE</div>
+    <div id="app">
+      <transition name="fade">
+        <div
+          class="scroll-top"
+          v-if="showButton"
+          @click="scrollToTop"
+        >
+          ▲ TOP
+        </div>
+      </transition>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="../js/common.js"></script>
+</body>
+</html>
