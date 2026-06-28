@@ -1,24 +1,27 @@
 // start app
 new Vue({
-  el: '#modal1',
+  el: '#modal',
+
   data: {
-    showModal: false
+    showModal: false,
+    currentImage: ''
   },
+
   components: {
     modal: {
       template: '#modal-template'
     }
-  }
-});
-
-new Vue({
-  el: '#modal2',
-  data: {
-    showModal2: false
   },
-  components: {
-    modal: {
-      template: '#modal-template2'
+
+  methods: {
+    openModal(event) {
+      this.currentImage = event.target.dataset.large;
+      this.showModal = true;
+    },
+
+    closeModal() {
+      this.showModal = false;
+      this.currentImage = '';
     }
   }
 });
