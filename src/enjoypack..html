@@ -20,14 +20,15 @@
 </head>
 <body>
   <section class="work">
-    <h1 class="work_title">Yahoo!ウォレット/ Yahoo!マネー</h1>
-    <p class="work_img"><img src="../img/work/Yahoo/money/money_01.png" alt="実装した端末の画像" width="45%"></p>
+    <h1 class="work_title">Enjoyパック　リニューアル</h1>
+    <p class="work_img"><img src="../img/work/Yahoo/enjoy/enjoy01.png" alt="実装した端末の画像" width="100%"></p>
     <div class="work_detail">
       <dl class="work_disctiption">
           <dt class="work_heading">概要</dt>
           <dd class="work_phrase">
-            本件は「Yahoo!ウォレット」という決済サービスを軸に、ユーザー間で対面送金が行える新規アプリの企画・制作およびWebページの刷新を担当した案件です。リリースから運用に至るまで、iOS／AndroidアプリのUI作成、Webデザイン、販促用ページの実装、リソース管理を担当いたしました。デザイン面ではリードデザイナーと協働しながらUI設計およびビジュアルの制作を行いました。
-          </dd>
+          サービスリニューアルに伴うWebページ内のビジュアル作成およびページ実装を担当。デザイン作業では、Atomic Designを用いたコンポーネント設計、class名のルール策定、AbstractおよびSketchの導入を行い、制作環境のモダン化を推進した。
+          開発時には、Atomic Designと親和性の高いVue.jsおよびNuxt.jsを採用し、開発環境の刷新を実施。また、SPページのみだったサービスページをPC向けにも最適化した。
+          プロジェクト進行ではスクラムを用いて、メンバーの進捗管理やタスク管理を行い、リリースに向けた開発を推進した。          </dd>
       </dl>            
       <ul class="work_phrase">
           <li>制作，実装，運用，プロジェクト管理</li>
@@ -39,45 +40,14 @@
       </ul>
       <dl class="work_disctiption">
           <dt class="work_heading">作業内容</dt>
-          <dd class="work_phrase">Android・iOS両端末のUIデザイン，その他アイコンやアプリ内で使用されたイラストを作成</dd>
-          <dd class="work_phrase">LPの作成・実装</dd>
-
+          <dd class="work_phrase">コンポーネント設計：ビジュアル設計<br>
+          atomic designの設計手法を用いて、Atoms / Molecules / Organisms を作成し、その後にページのデザインを実施。グルーピング参照元：http://makotottn.hatenablog.com/entry/2017/12/04/010923</dd>
+          <dd class="work_phrase">コンポーネント設計：テンプレート設計<br>
+          設計したAtoms / Molecules / Organisms をもとにテンプレートの設計を実施。ページ実装の効率化を図った。</dd>
+          <dd class="work_phrase"><img src="../img/work/Yahoo/enjoy/enjoy02.png" width="100%"></dd>
       </dl>
     </div>
   </section>
-<section id="modal" class="area-detail">
-  <img src="../img/work/Yahoo/money/money_02.png" width="100%">
-  <img src="../img/work/Yahoo/money/money_03.png" width="100%">
-  <img src="../img/work/Yahoo/money/wallet.gif" width="40%"style="margin: 10px;">
-  <div class="content-detail">
-    <img
-      src="../img/work/Yahoo/money/money_04.png"
-      width="100%"
-      data-large="../img/work/Yahoo/money/money_05.png"
-      @click="openModal($event)"
-      alt=""
-    >
-    <p class="content-detail__info">
-      <span>*画像をクリックすると拡大できます</span>
-    </p>
-  </div>
-  <!-- モーダル -->
-<modal v-if="showModal" @close="closeModal">
-  <img :src="currentImage" :alt="currentAlt">
-</modal>
-</section>
-<!-- モーダルテンプレート -->
-<script type="text/x-template" id="modal-template">
-  <transition name="modal">
-    <div class="modal-mask" @click="$emit('close')">
-      <div class="modal-container" @click.stop>
-        <div class="modal-content">
-          <slot></slot>
-        </div>
-      </div>
-    </div>
-  </transition>
-</script>
   <section class="footer">
     <div>© AHASEBE</div>
     <div id="app">

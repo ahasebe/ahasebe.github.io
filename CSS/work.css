@@ -48,6 +48,10 @@ a:visited {
   color: #90B3DF;
 }
 
+.work_disctiption {
+  margin-top: 24px;
+}
+
 .work_img {
   padding: 20px 0;
   background-color: #EEEEEE;
@@ -77,8 +81,8 @@ a:visited {
   font-size: 14px;
 }
 
-.work-phrase {
-  margin: 24px 0 42px;
+.work_phrase {
+  margin: 24px 0;
 }
 
 .scroll-top {
