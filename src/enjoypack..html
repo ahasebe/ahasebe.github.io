@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <title>ahasebe</title>
+    <meta name="description" content="ahasebe portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta property="og:url" content="https://ahasebe.github.io/" />
+    <meta property="og:title" content="ahasebe" />
+    <meta property="og:image" content="img/ahasbe_ogp.png" />
+    <meta property="og:description" content="ahasebe portfolio / はせべのポートフォリオ" />
+    <link rel="shortcut icon" href="../img/ahasebe.png">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/work.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="work">
+    <h1 class="work_title">Enjoyパック　リニューアル</h1>
+    <p class="work_img"><img src="../img/work/Yahoo/enjoy/enjoy01.png" alt="実装した端末の画像" width="100%"></p>
+    <div class="work_detail">
+      <dl class="work_disctiption">
+          <dt class="work_heading">概要</dt>
+          <dd class="work_phrase">
+          サービスリニューアルに伴うWebページ内のビジュアル作成およびページ実装を担当。デザイン作業では、Atomic Designを用いたコンポーネント設計、class名のルール策定、AbstractおよびSketchの導入を行い、制作環境のモダン化を推進した。
+          開発時には、Atomic Designと親和性の高いVue.jsおよびNuxt.jsを採用し、開発環境の刷新を実施。また、SPページのみだったサービスページをPC向けにも最適化した。
+          プロジェクト進行ではスクラムを用いて、メンバーの進捗管理やタスク管理を行い、リリースに向けた開発を推進した。          </dd>
+      </dl>            
+      <ul class="work_phrase">
+          <li>制作，実装，運用，プロジェクト管理</li>
+          <li>Photoshop/ Illustrator/ sketch</li>
+          <li>環境：HTML/ CSS/ JavaScript</li>
+          <li>担当期間：2015年 12月 - 2017年 9月</li>
+          <li>メンバー：45人（PM/エンジニア/デザイナー込み）</li>
+          <li>URL：https://wallet.yahoo.co.jp/ </li>
+      </ul>
+      <dl class="work_disctiption">
+          <dt class="work_heading">作業内容</dt>
+          <dd class="work_phrase">コンポーネント設計：ビジュアル設計<br>
+          atomic designの設計手法を用いて、Atoms / Molecules / Organisms を作成し、その後にページのデザインを実施。グルーピング参照元：http://makotottn.hatenablog.com/entry/2017/12/04/010923</dd>
+          <dd class="work_phrase">コンポーネント設計：テンプレート設計<br>
+          設計したAtoms / Molecules / Organisms をもとにテンプレートの設計を実施。ページ実装の効率化を図った。</dd>
+          <dd class="work_phrase"><img src="../img/work/Yahoo/enjoy/enjoy02.png" width="100%"></dd>
+      </dl>
+    </div>
+  </section>
+  <section class="footer">
+    <div>© AHASEBE</div>
+    <div id="app">
+      <transition name="fade">
+        <div
+          class="scroll-top"
+          v-if="showButton"
+          @click="scrollToTop"
+        >
+          ▲ TOP
+        </div>
+      </transition>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="../js/common.js"></script>
+</body>
+</html>
