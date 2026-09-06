@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <title>ahasebe</title>
+    <meta name="description" content="ahasebe portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta property="og:url" content="https://ahasebe.github.io/" />
+    <meta property="og:title" content="ahasebe" />
+    <meta property="og:image" content="img/ahasbe_ogp.png" />
+    <meta property="og:description" content="ahasebe portfolio / はせべのポートフォリオ" />
+    <link rel="shortcut icon" href="../img/ahasebe.png">
+    <link rel="stylesheet" href="../CSS/Style.css">
+        <link rel="stylesheet" href="../CSS/work.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="work">
+    <h1 class="work_title">ロゴ刷新PJの推進</h1>
+    <p class="work_img"><img src="../img/work/mixi/minimo/vi/vi.png" alt="実装した端末の画像" width="100%"></p>
+    <div class="work_detail">
+      <dl class="work_disctiption">
+          <dt class="work_heading">概要</dt>
+          <dd class="work_phrase">
+            iOS 26「Liquid Glass」対応 ─ UI適用基準の策定
+          </dd>
+      </dl>            
+      <ul class="work-phrase">
+          <li>担当：プロジェクト進行、仕様書作成</li>
+          <li>使用ツール：Figma / Notion</li>
+          <li>2025年12月〜2026年8月</li>
+      </ul>
+      <dl class="work_disctiption">
+          <dt class="work_heading">作業内容</dt>
+          <dd class="work_phrase">
+            iOS 26 で導入された Liquid Glass に対し、アプリ全体のUIをどう追従させるかを設計しました。画面ごとに個別対応するのではなく、以降も参照できる適用基準をつくること<br>
+            <span style="margin: 10px 0;display: block;"></span>
+            OSアップデート対応は影響範囲が広い一方、着手時点では対応の輪郭が誰にも見えていない状況からのスタート<br>
+            - 対応タスクが「その他対応」という曖昧なまとまりのまま、議論がチャットのスレッドに散在<br>
+            - 実装が SwiftUI と UIKit の混在で、OS標準に寄せるかカスタムを維持するかの判断軸がなかった<br>
+            - 期待値が言語化されていないため、エンジニアが何をどう直せばよいか特定できない状態<br>
+            <span style="margin: 10px 0;display: block;"></span>
+            取り組み<br>
+            1. 曖昧なタスク群を確定事項として構造化した<br>
+            2. 選択UIの適用基準を策定<br>
+            3. 実機検証とOS差分の切り分<br>
+            4. やらない判断をする<br>
+          </dd>
+           <dd><img src="../img/work/mixi/minimo/vi/vi02.png" width="100%"></dd>
+      </dl>
+    </div>
+  </section>
+  <section class="footer">
+    <div>© AHASEBE</div>
+    <div id="app">
+      <transition name="fade">
+        <div
+          class="scroll-top"
+          v-if="showButton"
+          @click="scrollToTop"
+        >
+          ▲ TOP
+        </div>
+      </transition>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="../js/common.js"></script>
+</body>
+</html>

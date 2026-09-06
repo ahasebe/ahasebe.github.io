@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <title>ahasebe</title>
+    <meta name="description" content="ahasebe portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta property="og:url" content="https://ahasebe.github.io/" />
+    <meta property="og:title" content="ahasebe" />
+    <meta property="og:image" content="img/ahasbe_ogp.png" />
+    <meta property="og:description" content="ahasebe portfolio / はせべのポートフォリオ" />
+    <link rel="shortcut icon" href="../img/ahasebe.png">
+    <link rel="stylesheet" href="../CSS/Style.css">
+        <link rel="stylesheet" href="../CSS/work.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="work">
+    <h1 class="work_title">ロゴ刷新PJの推進</h1>
+    <p class="work_img"><img src="../img/work/mixi/minimo/vi/vi.png" alt="実装した端末の画像" width="100%"></p>
+    <div class="work_detail">
+      <dl class="work_disctiption">
+          <dt class="work_heading">概要</dt>
+          <dd class="work_phrase">
+            ブランドのビジュアルアイデンティティ刷新にあたり、プロダクト全体のどこに旧ロゴ・旧アイコンが埋まっているかを洗い出し、リリース当日までの進行を担当。ロゴやアイコンを描くデザイン作業ではなく、対象の発見・判断ルールの設計・他部署との接続が中心の役割。
+          </dd>
+      </dl>            
+      <ul class="work-phrase">
+          <li>担当：プロジェクト進行、仕様書作成</li>
+          <li>使用ツール：Figma / Notion</li>
+          <li>期間：2026年4月〜6月</li>
+      </ul>
+      <dl class="work_disctiption">
+          <dt class="work_heading">作業内容</dt>
+          <dd class="work_phrase">
+            minimoのVI刷新プロジェクトにおいて、既存アプリ・Web・ヘルプページ・ストア画像など、複数のユーザー接点にまたがるデザイン反映と進行整理を担当。<br>
+            新VIをプロダクト全体に反映するにあたり、ロゴ・アイコン・バナー・ストア素材などの影響範囲を洗い出し、リリース日までに対応する項目と後続対応に回す項目を整理。ブランド印象に影響する箇所を優先しながら、iOS / Androidの実装差分や既存仕様を踏まえて、実装可否・確認範囲・リリースタイミングを調整。<br>
+            単なるデザイン差し替えではなく、VI刷新を各接点に無理なく反映するための判断基準を言語化し、関係者へ共有。プロダクト内外で表現がばらつかないよう、対応方針の整理や運用面の整備まで実施。<br>
+            <span style="margin: 10px 0;display: block;"></span>
+            ◯進行上の課題<br>
+            - 差し替え対象の一覧が存在しなかった。どの画面・どの露出面にブランド要素が使われているかを、誰も把握していない状態<br>
+            - 担当が決まっていない露出面が多数あった。ヘルプページ、オウンドメディア、コーポレートサイト内の事業紹介ページなど、プロダクト外の面は窓口すら不明<br>
+            - リリース日が固定されている一方で対象が増え続け、「何を今回やり、何をやらないか」を決めないと全体が止まる状況<br>
+            <span style="margin: 10px 0;display: block;"></span>
+            そのため、下記の順序に作業を進行<br>
+            1. 差し替え対象を棚卸ししてデータベース化<br>
+            2. スコープの範囲の整理<br>
+            3. 実装との差分の埋め合わせ<br>
+            4. QA向けに検証を設計の手順書を作成<br>
+            5. リリース当日の進行を設計
+          </dd>
+           <dd><img src="../img/work/mixi/minimo/vi/vi02.png" width="100%"></dd>
+          <dd><img src="../img/work/mixi/minimo/vi/vi01.png" width="100%"></dd>
+      </dl>
+    </div>
+  </section>
+  <section class="footer">
+    <div>© AHASEBE</div>
+    <div id="app">
+      <transition name="fade">
+        <div
+          class="scroll-top"
+          v-if="showButton"
+          @click="scrollToTop"
+        >
+          ▲ TOP
+        </div>
+      </transition>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="../js/common.js"></script>
+</body>
+</html>
