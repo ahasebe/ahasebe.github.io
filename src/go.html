@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <title>ahasebe</title>
+    <meta name="description" content="ahasebe portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta property="og:url" content="https://ahasebe.github.io/" />
+    <meta property="og:title" content="ahasebe" />
+    <meta property="og:image" content="img/ahasbe_ogp.png" />
+    <meta property="og:description" content="ahasebe portfolio / はせべのポートフォリオ" />
+    <link rel="shortcut icon" href="../img/ahasebe.png">
+    <link rel="stylesheet" href="../CSS/Style.css">
+        <link rel="stylesheet" href="../CSS/work.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="work">
+    <h1 class="work_title">GO 個人向けタクシー配車手配サービス</h1>
+    <p class="work_img"><img src="../img/work/go/gobusiness/gobusiness01.png" alt="実装した端末の画像" width="100%"></p>
+    <div class="work_detail">
+      <dl class="work_disctiption">
+          <dt class="work_heading">概要</dt>
+          <dd class="work_phrase">
+            個人のスマートフォンからタクシーの配車依頼ができるサービス。メインで担当する法人向けサービスのGO BUSINESSに絡む機能のUI開発、実装されている既存画面の改善を担当
+          </dd>
+      </dl>            
+      <ul class="work-phrase">
+          <li>担当：UI/UX</li>
+          <li>使用ツール：Figman</li>
+          <li>2023年10月〜2025年5月</li>
+      </ul>
+      <dl class="work_disctiption">
+          <dt class="work_heading">作業内容</dt>
+          <dd class="work_phrase">⒈dMと協業しながら仕様/機能に適したUIを検討・提案する
+            <br>⒉レビューや仕様変更の指摘を受けて着地点をPdMと擦り合わせる
+            <br>⒊エンジニアと連携後、場合によっては開発環境に合わせて仕様を調整する
+          </dd>
+          <dd class="work_phrase">【User App】車両迎車中のユーザーからのキャンセルを防ぐ改善に向けたデザイン検討
+            <br>検討したデザインはABテストを実施。数値分析の結果、各画面平均して2%程度の改善
+            <br>・キャンセルを行うことで自身に起こる事象を理解することができること
+            <br>・状況を理解した上で軽率なキャンセルを防ぐこと、納得してキャンセルできること
+            <br>・キャンセルを防ぎ可能であればユーザーにそのまま待つことを促すこと
+          </dd>
+          <dd class="work_phrase">【GO BISINESS関連】GOチケット</dd>
+          <dd><img src="../img/work/go/goapp/go01.png" width="100%"></dd>
+      </dl>
+    </div>
+  </section>
+  <section class="footer">
+    <div>© AHASEBE</div>
+    <div id="app">
+      <transition name="fade">
+        <div
+          class="scroll-top"
+          v-if="showButton"
+          @click="scrollToTop"
+        >
+          ▲ TOP
+        </div>
+      </transition>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="../js/common.js"></script>
+</body>
+</html>
