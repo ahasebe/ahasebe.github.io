@@ -53,7 +53,7 @@ a:visited {
 }
 
 .work_img {
-  padding: 20px 0;
+  margin: 20px 0;
   background-color: #EEEEEE;
   text-align: center;
   border-radius: 10px;
@@ -85,6 +85,17 @@ a:visited {
   margin: 24px 0;
 }
 
+.work-step-number {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.work-list {
+  margin: 1rem 0 0;
+  padding-left: 1rem;
+  border-left: 3px solid #eeeeee;
+}
 .scroll-top {
   position: fixed;
   right: 20px;
@@ -218,4 +229,356 @@ a:visited {
     width: 85%;
     margin: 0 auto;
   }
+}
+
+.minimo-lead {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  font-weight: 600;
+  margin: 0 0 2rem;
+}
+.minimo-summary {
+  margin: 0 0 3rem;
+}
+.minimo-meta {
+  margin: 0 0 4rem;
+}
+.minimo-section {
+  margin: 2rem auto;
+}
+.minimo-section:first-child {
+  margin-top: 0;
+  padding-bottom: 2rem;
+}
+.minimo-kicker {
+  display: block;
+  font-size: .78rem;
+  letter-spacing: .12em;
+  font-weight: 700;
+  margin-bottom: .6rem;
+  text-transform: uppercase;
+}
+.minimo-section-title {
+  margin: 0 0 1.5rem;
+  font-size: 1.7rem;
+  line-height: 1.45;
+}
+.minimo-section-lead {
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+.minimo-projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: #ddd;
+  margin: 2rem 0 0;
+}
+.minimo-project {
+  background: #fff;
+  padding: 1.5rem;
+}
+.minimo-project strong {
+  display: block;
+  margin-bottom: .5rem;
+  line-height: 1.6;
+}
+.minimo-project span {
+  display: block;
+  font-size: .9rem;
+  line-height: 1.7;
+}
+
+.minimo-process-item {
+  margin-top: 16px;
+}
+.minimo-step {
+  border-top: 1px solid #ddd;
+  padding: 1.5rem 0;
+}
+.minimo-step:last-child {
+  border-bottom: 1px solid #ddd;
+}
+.minimo-process-number {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: .08em;
+}
+.minimo-step-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: .7rem;
+}
+.minimo-step p,
+.minimo-section p {
+  line-height: 2;
+}
+.minimo-list {
+  margin: 1rem 0 0;
+  padding-left: 1rem;
+  border-left: 3px solid currentColor;
+}
+.minimo-list li {
+  line-height: 1.9;
+  margin-bottom: .45rem;
+}
+.minimo-result {
+  border-left: 3px solid currentColor;
+  padding: .2rem 0 .2rem 1.2rem;
+  margin-top: 2rem;
+}
+.minimo-result strong {
+  display: block;
+  margin-bottom: .7rem;
+}
+.minimo-note {
+  font-size: .9rem;
+  line-height: 1.9;
+  opacity: .8;
+}
+
+@media (max-width: 700px) {
+  .minimo-lead {
+    font-size: 1.08rem;
+  }
+  .minimo-projects {
+    grid-template-columns: 1fr;
+  }
+  .minimo-section {
+    margin-top: 4rem;
+  }
+  .minimo-section-title {
+    font-size: 1.45rem;
+  }
+}
+
+.case{
+}
+.case_intro{
+  margin-top:28px
+}
+.case_kicker{
+  font-size:12px;
+  letter-spacing:.12em;
+  font-weight:700;
+  color:#777;
+  margin:0 0 10px
+}
+.case_lead{
+  font-size:18px;
+  line-height:1.9;
+  font-weight:600;
+  margin:0 0 18px}
+.case_text{
+  font-size:15px;
+  line-height:2;
+  margin:0
+}
+.case_text + .case_text{
+  margin-top:12px
+}
+.case_meta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:#ddd;
+  margin:28px 0 0
+}
+.case_meta_item{
+  background:#fff;
+  padding:17px 20px
+}
+.case_meta_label{
+  display:block;
+  font-size:10px;
+  letter-spacing:.12em;
+  color:#777;
+  font-weight:700;
+  margin-bottom:5px
+}
+.case_meta_value{
+  font-size:14px;
+  line-height:1.8
+}
+.case_section{
+  margin-top:78px
+}
+.case_section_title{
+  font-size:25px;
+  line-height:1.6;
+  margin:0 0 25px
+}
+.case_section_title small{
+  display:block;
+  font-size:10px;
+  letter-spacing:.15em;
+  color:#777;
+  margin-bottom:5px
+}
+.case_issue{
+  border-top:1px solid #ddd
+}
+.case_issue_item{
+  padding:17px 0;
+  border-bottom:1px solid #ddd;
+  font-size:15px;
+  line-height:1.9
+}
+.case_issue_item b{
+  display:inline-block;
+  width:28px;
+  font-size:12px;
+  color:#777
+}
+.case_flow{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:#fff
+}
+.case_flow_item{
+  background:#e7ecf1;
+  padding:18px
+}
+.case_flow_no{
+  font-size:11px;
+  font-weight:700;
+  color:#777;
+  margin-bottom:12px
+}
+.case_flow_title{
+  font-size:14px;
+  font-weight:700;
+  line-height:1.6
+}
+.case_flow_text{
+  font-size:12px;
+  line-height:1.8;
+  margin:8px 0 0
+}
+.case_block{
+  margin-top:48px
+}
+.case_block h3{
+  font-size:18px;
+  line-height:1.6;
+  margin:0 0 13px
+}
+.case_block h3 span{
+  display:block;
+  font-size:10px;
+  letter-spacing:.14em;
+  color:#777;
+  margin-bottom:4px
+}
+.case_list{
+  padding-left:1.3em;
+  margin:15px 0 0;
+  border-left: 3px solid #eeeeee;
+}
+.case_list li{
+  font-size:14px;
+  line-height:1.9;
+  margin-bottom:7px
+}
+.case_callout{
+  background:#f6f6f6;
+  padding:22px 24px;
+  margin-top:22px
+}
+.case_callout_title{
+  font-weight:700;
+  margin:0 0 7px;
+  font-size:14px
+}
+.case_callout p{
+  font-size:14px;
+  line-height:1.9;
+  margin:0
+}
+.case_quote{
+  border-left:3px solid #111;
+  padding:12px 17px;
+  margin:20px 0;
+  background:#fafafa;
+  font-size:14px;
+  line-height:1.9;
+  font-weight:600
+}
+.case_compare{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:#ddd;
+  margin-top:20px
+}
+.case_compare_item{
+  background:#fff;
+  padding:18px
+}
+.case_compare_label{
+  font-size:10px;
+  letter-spacing:.1em;
+  color:#777;
+  font-weight:700
+}
+.case_compare_value{
+  font-size:15px;
+  font-weight:700;
+  margin-top:5px
+}
+.case_compare_note{
+  font-size:12px;
+  line-height:1.8;
+  margin-top:7px
+}
+.case_result{
+  border-top:2px solid #111
+}
+.case_result_item{
+  display:grid;
+  grid-template-columns:35px 1fr;
+  gap:8px;
+  padding:17px 0;
+  border-bottom:1px solid #ddd;
+  font-size:14px;
+  line-height:1.9
+}
+.case_result_no{
+  font-size:11px;
+  color:#777;
+  font-weight:700
+}
+.case_learning{
+  background:#f6f6f6;
+  padding:25px
+}
+.case_learning p{
+  font-size:15px;
+  line-height:2;
+  margin:0
+}
+.case_learning p+p{
+  margin-top:15px
+}
+.case_image{
+  margin-top:35px
+}
+.case_image img{
+  display:block;
+  width:100%;
+  height:auto
+}
+.case_caption{
+  font-size:11px;
+  color:#777;
+  line-height:1.7;
+  margin-top:7px
+}
+@media(max-width:700px){
+  .case_meta,.case_compare{grid-template-columns:1fr}
+  .case_flow{grid-template-columns:1fr 1fr}
+  .case_section{margin-top:55px}
+  .case_section_title{font-size:21px}
+  .case_lead{font-size:16px}
 }
