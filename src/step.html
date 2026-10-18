@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <title>PayPay STEP | ahasebe portfolio</title>
+    <meta name="description" content="PayPay STEPにおけるページ開発・Vue.js/Nuxt.js実装・コンポーネント設計・運用ドキュメント整備の事例。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta property="og:url" content="https://ahasebe.github.io/" />
+    <meta property="og:title" content="PayPay STEP | ahasebe" />
+    <meta property="og:image" content="../img/ahasbe_ogp.png" />
+    <meta property="og:description" content="ahasebe portfolio" />
+    <link rel="shortcut icon" href="../img/ahasebe2.png">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/work.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="work">
+    <h1 class="work_title">PayPay STEP / コマース利用促進ロイヤリティープログラムリニューアル</h1>
+    
+    <p class="work_img">
+      <img src="../img/work/Yahoo/step/content--detail24-01.png" alt="PayPay STEP メイン画像" width="100%">
+    </p>
+
+    <div class="work_detail">
+      <!-- 概要・メタ情報 -->
+      <section class="minimo-section">
+        <h2 class="minimo-section-title">ロイヤリティープログラムのフロントエンド開発・コンポーネント設計</h2>
+        <p class="minimo-section-lead">
+          自社コマースサービスの利用促進を目的とした新規サービス「PayPay STEP」の立ち上げからリリースに向けて、企画・エンジニアと連携してフロント実装を担当。ユーザーの利用状況や達成条件に応じた動的な構成出し分け画面の構築や、開発・運用の持続性を高めるドキュメント整備を行いました。
+        </p>
+        <ul class="work-list">
+          <li>- 期間：2021年1月 〜 2021年5月</li>
+          <li>- 役割：ページコーディング・フロントエンド開発・コンポーネント設計</li>
+          <li>- チーム：デザイナー 4名</li>
+          <li>- 技術スタック：Vue.js / Nuxt.js / Photoshop</li>
+          <li>- URL：<a href="https://paypaystep.yahoo.co.jp/" target="_blank" rel="noopener">https://paypaystep.yahoo.co.jp/</a></li>
+        </ul>
+      </section>
+
+      <span style="border-bottom: 1px solid #efefef;display: block; margin: 2rem 0;"></span>
+
+      <!-- 主な取り組みセクション -->
+      <section class="minimo-section">
+        <h2 class="minimo-section-title">主な開発取り組み</h2>
+        <p class="minimo-section-lead">
+          リリースの推進にとどまらず、リリース後の改善やコードリファクタリング、保守運用の仕組み化まで一貫して対応しました。
+        </p>
+
+        <div class="minimo-projects">
+          <div class="minimo-project">
+            <strong>属性別動的出し分け＆レスポンシブ実装</strong>
+            <span>未ログイン・ログイン状態などユーザー属性や達成条件に合わせた表示の出し分けをレスポンシブ対応で構築。</span>
+          </div>
+          <div class="minimo-project">
+            <strong>Atomic Designに基づくコンポーネント設計</strong>
+            <span>保守性・再利用性を意識したコンポーネント設計を行い、開発効率の向上とUIの統一感を担保。</span>
+          </div>
+          <div class="minimo-project">
+            <strong>コーディングルール・運用の仕組み化</strong>
+            <span>コンポーネント設計書やコーディングガイドライン等のドキュメントを作成し、チーム全体での実装品質を平準化。</span>
+          </div>
+          <div class="minimo-project">
+            <strong>コードのリファクタリング・改善</strong>
+            <span>リリース後もパフォーマンス向上のためのリファクタリングや新機能の追加実装を継続して実施。</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 詳細: ページ実装（属性別出し分け） -->
+      <section class="minimo-section" style="margin-top: 4rem;">
+        <h2 class="minimo-section-title">ユーザー属性に応じた画面出し分け・レスポンシブ実装</h2>
+        <p class="minimo-section-lead">
+          ユーザーのログイン状態や条件達成度に応じて見せるコンテンツやデザイン構成を柔軟に制御。マルチデバイスでの閲覧性を担保するレスポンシブ設計を行いました。
+        </p>
+        
+        <p style="font-weight: bold; margin-top: 1.5rem;">【未ログイン時画面】</p>
+        <p class="work_img">
+          <img src="../img/work/Yahoo/step/content--detail24-02.png" alt="未ログイン時画面" width="100%">
+        </p>
+
+        <p style="font-weight: bold; margin-top: 1.5rem;">【ログイン時画面】</p>
+        <p class="work_img">
+          <img src="../img/work/Yahoo/step/content--detail24-03.png" alt="ログイン時画面" width="100%">
+        </p>
+      </section>
+
+      <!-- 詳細: コンポーネント設計 -->
+      <section class="minimo-section" style="margin-top: 4rem;">
+        <h2 class="minimo-section-title">Atomic Designに基づいたコンポーネント設計</h2>
+        <p class="minimo-section-lead">
+          Vue.js / Nuxt.jsでの実装において、Atomic Designの思考を取り入れて設計。再利用可能なコンポーネント群を定義することで、新規ページ作成や運用時の変更対応を大幅に効率化させました。
+        </p>
+        <p style="margin-top: 1rem;">
+          <a href="../img/work/Yahoo/step/component2.pdf" target="_blank" style="text-decoration: underline;">コンポーネント設計書例（PDF）</a>
+        </p>
+      </section>
+
+      <!-- 学びとこれから -->
+      <section class="minimo-section" style="margin-top: 4rem;">
+        <span class="minimo-kicker">学びとこれから</span>
+        <h2 class="minimo-section-title">デザインと実装の架け橋となるフロントエンド設計</h2>
+        <p class="minimo-section-lead">
+          ロジックを含む複雑なサービス画面において、単なる見た目のコーディングにとどまらず、状態変化や出し分け条件を意識したコンポーネント構造・ルール策定の重要性を体感しました。
+        </p>
+        <p>
+          デザインとフロントエンド開発の両方の視点を強みとし、エンジニアと密にコミュニケーションを取りながら拡張性の高いWebプロダクトの構築に貢献していきます。
+        </p>
+      </section>
+
+    </div>
+  </section>
+
+  <section class="footer">
+    <div>© AHASEBE</div>
+    <div id="app">
+      <transition name="fade">
+        <div
+          class="scroll-top"
+          v-if="showButton"
+          @click="scrollToTop"
+        >
+          ▲ TOP
+        </div>
+      </transition>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="../js/common.js"></script>
+</body>
+</html>
