@@ -54,7 +54,6 @@ a:visited {
 
 .work_img {
   margin: 20px 0;
-  background-color: #EEEEEE;
   text-align: center;
   border-radius: 10px;
 }
@@ -221,7 +220,6 @@ a:visited {
 @media screen and (max-width: 900px) {
   .work_img {
     padding: 20px 0;
-    background-color: #EEEEEE;
     text-align: center;
     border-radius: 4px;
   }
@@ -261,6 +259,12 @@ a:visited {
 .minimo-section-title {
   margin: 0 0 1.5rem;
   font-size: 1.7rem;
+  line-height: 1.45;
+}
+
+.minimo-section-subtitle {
+  margin: 0 0 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.45;
 }
 .minimo-section-lead {

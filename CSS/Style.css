@@ -47,7 +47,9 @@ a {
 a:visited {
   color: #4A4A4A;
 }
-
+img {
+  pointer-events: none;
+}
 /* KV */
 .kv {
  background: url(../img/kv.svg)no-repeat center;
