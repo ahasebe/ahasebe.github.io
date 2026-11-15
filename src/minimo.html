@@ -34,7 +34,7 @@
   <p class="minimo-section-lead">
     美容サロン予約サービス「minimo」の一般利用者向け・施術者向けアプリで、複数の施策を並行して設計。
     施策ごとの目的や要件だけでなく、実装可能性、iOS / Androidの仕様差分、既存プロダクトとの整合性、
-    スケジュールや対応範囲まで確認しながら、チームが開発を進めやすい状態をつくることを意識しています。
+    スケジュールや対応範囲まで確認しながら、チームが開発を進めやすい状態整え、最適なデザインをチームで考え、チームのパフォーマンスを上げていく
   </p>
   <ul class="work-list">
     <li>- 期間：2025年6月〜から継続中</li>
@@ -47,39 +47,47 @@
 <span style="border-bottom: 1px solid #efefef;display: block;"></span>
 <!-- Projects -->
 <section class="minimo-section">
-  <h2 class="minimo-section-title">複数施策を並行して担当</h2>
+  <h2 class="minimo-section-title">施策の目的に対して、背景を理解して合意を取り、何が最適かを考えてUIを作成する</h2>
 
   <p class="minimo-section-lead">
-    一つの施策だけを深掘りするのではなく、性質の異なる複数の施策を並行して担当。
-    施策ごとに異なる課題や制約を整理しながら、企画から実装・リリースまでのデザインを進めています。
+    施策ごとに異なる課題や制約を整理しながら、企画から実装・リリースまでのデザインを進める
+    minimoはC向けの予約をして施術を受けるお客様側、B向けの施術を提供する掲載者側の機能が提供されている
+    施策にごとに、どのユーザーに対して何をどう提供するのが最適か・施策として何を解消したいのかを整理してアウトプットを出していく
   </p>
 
   <div class="minimo-projects">
     <div class="minimo-project">
-      <strong>予約お断り機能の切り出し</strong>
-      <span>4月のデザイン方針起案から8月末の本番リリースまで約5か月を通して担当</span>
+      <strong>口コミのAI要約</strong>
+      <span>投稿される口コミを一定条件を元に200文字以内の要約として表示する。ユーザーの情報収集の手助けをし、予約転換率（CVR）を上げることを目的とする。
+        本件ではデザインから実装までを担当</span>
     </div>
     <div class="minimo-project">
-      <strong>キャンセルフローの抜本改善</strong>
-      <span>仕様検討から実装方針の確定、タスク分解まで担当</span>
+      <strong>キャンセルフロー改善</strong>
+      <span>お客様・掲載者ともに予約のキャンセル時のコミュニケーションの体験に課題を抱えていた。
+        今回の施策ではその「残念体験」を減らすことを目的とする。
+        本件ではユーザー体験の仕様検討から実装方針の確定、タスク分解まで担当</span>
+    </div>
+    <div class="minimo-project">
+      <strong>キャンセル機能から予約のお断り機能の切り出し</strong>
+      <span>掲載者が特定のお客様からの予約を受け付けないようにする機能。これまでは特定のキャンセル処理を行うと
+        同時に予約制限となり機能になっており、意図しないブロック操作になっていた場面もあった。
+        そのためユーザー体験の改善と目的を整理し、自分の判断で設定できる機能とした。
+      </span>
+    </div>
+    <div class="minimo-project">
+      <strong>施術メニューを複数同時予約ができるマイプラン機能</strong>
+      <span>既存データ・仕様との整合性を踏まえて設計</span>
     </div>
     <div class="minimo-project">
       <strong>経験年数表示の正確化</strong>
       <span>既存データ・仕様との整合性を踏まえて設計</span>
     </div>
     <div class="minimo-project">
-      <strong>口コミのAI要約</strong>
-      <span>AIによる情報整理を前提とした新しい情報提示のUIを設計</span>
-    </div>
-    <div class="minimo-project">
-      <strong>直前割引メニューの作成フロー改善</strong>
-      <span>施術者側の作成体験を改善するためのフローを設計</span>
-    </div>
-    <div class="minimo-project">
       <strong>資格の自己申告</strong>
       <span>掲載者側の資格情報の取得するためのフロー改善</span>
     </div>
   </div>
+
 </section>
 
 <!-- Process -->
@@ -87,14 +95,14 @@
     <div class="case_section">
       <h2 class="case_section_title">施策チームでのプロダクトデザインフロー</h2>
       <p class="minimo-section-lead">
-      UIを作る工程だけではなく、施策が実装・リリースされるまでのプロセス全体に関わっています
-      不明点・疑問点は早めに対応して、使い勝手も技術的にも最良の形を考えていく
+      UIを作る工程だけではなく、不明点・疑問点は早めに対応して、使い勝手も技術的にも最良の形を考えていく
+      施策が実装・リリースされるまでのプロセス全体に関わっています
       </p>
       <div class="case_flow">
         <div class="case_flow_item">
           <div class="case_flow_no">01　起案・論点整理</div>
           <div class="case_flow_title">利用される場所や既存機能との役割分担など論点整理</div>
-          <p class="case_flow_text">後から問題になりそうな論点を自分から提起。必要な関係者との認識合わせの場も設定します。</p>
+          <p class="case_flow_text">後から問題になりそうな論点を自分から提起。必要な関係者との認識合わせの場も設定</p>
         </div>
         <div class="case_flow_item">
           <div class="case_flow_no">02　仕様・実装可能性の確認</div>
@@ -103,8 +111,8 @@
         </div>
         <div class="case_flow_item">
           <div class="case_flow_no">03　UI / UX設計</div>
-          <div class="case_flow_title">ユーザーが利用するフローだけでなく、実装・運用まで含めてデザイン</div>
-          <p class="case_flow_text">レビュー時には範囲・観点・期日を整理し、レビュアーが判断しやすい形</p>
+          <div class="case_flow_title">ユーザーが利用するフローだけでなく、実装・運用まで含めてデザインにする</div>
+          <p class="case_flow_text">レビュー時には範囲・観点・期日を整理し、レビュアーが判断しやすいにする</p>
         </div>
         <div class="case_flow_item">
           <div class="case_flow_no">04 スコープ・優先度の調整</div>
@@ -114,39 +122,82 @@
         <div class="case_flow_item">
           <div class="case_flow_no">05　実装・QA・リリース確認</div>
           <div class="case_flow_title">実装状況を確認し、QAで検出された不具合の修正確認</div>
-          <p class="case_flow_text">リリース後に問題が残らない状態</p>
+          <p class="case_flow_text">リリース後に問題が残らない状態にする</p>
         </div>
       </div>
     </div>
-  </div>
+    <p class="work_img">
+      <img src="../img/work/mixi/minimo/minimo/minimo02.png" alt="" width="100%">
+    </p>
+    <p class="work_img">
+      <img src="../img/work/mixi/minimo/minimo/minimo01.png" alt="予約お断り機能のデザイン" width="100%">
+    </p>
 </section>
 
 <section class="work">
   <h2 class="minimo-section-title">全体像を決め、デザインを作る</h2>
-
-  <p>
-    キャンセルフローの改善では、選択項目のアコーディオン開閉というインタラクションについて、
-    iOS・Androidの両フレームワークで実現可能かの技術調査を依頼しました。
-    プロトタイプを添えて、再設計プロジェクト側の関係者にもコメントを求めています。
+  <div>
+  <h3 class="minimo-section-subtitle">キャンセルフローの場合</h3>
+  <p class="minimo-section-lead">
+    予約サービスにとって、キャンセルされることは日常によくあることであると同時に、残念体験につながる要因になります。
+    minimo のキャンセル率は業界の水準と大きく変わらず20%前後、、件数を減らす施策ではユーザーへのインパクトが小さいと判断。
+    一方で、キャンセルのたびに生まれる「残念な体験」は、サービスの仕組みそのものから起きていました。<br>
+    <ul class="minimo-list">
+      <li>サロン側：当日の急なキャンセルや、連絡のない無断キャンセル</li>
+      <li>お客様側：サロンの都合による急なキャンセル</li>
+      <li>双方：実際の状況と違うキャンセル種別で処理されてしまい、本来は受けるべきでないペナルティや手数料が発生する</li>
+    </ul>
+    キャンセルの操作画面で「どの種別を選べばいいか」が分かりにくかったり、選んだ種別に意図しない処理がひも付いていたりと、UI と仕組みが原因になっていた。
   </p>
-
-  <p>
-    また、他施策と実装スケジュールがバッティングする可能性を事前に提起し、
-    「スケジュール次第では自分がデザインを引き継ぐ」と引き取り前提で確認。
-    デザイン完成後に制約を受け取るのではなく、先に手戻りの種を潰す進め方をとりました。
+  <p class="minimo-section-lead">
+    <ul class="minimo-list">
+      <li>・アプローチ</li>
+      <li>キャンセル種別を「誰の都合か」で「どのタイミングによるものか」で整理し、名前とキャンセルフローの見せ方を一新</li>
+      <li>時間帯に応じて選べる種別を絞り、迷いが生まれない動線にした</li>
+      <li>メッセージのやり取りから AI が適切な種別を提案し、実際と違う種別を選ぼうとしたときに気づける仕組みを導入（最終判断はユーザーに委ねる）</li>
+    </ul>
+    キャンセルの件数ではなく、キャンセルにまつわる残念な体験を減らすことを目的にて設定<br>
+    お客様とサロンの双方が、状況に合った正しいキャンセルを迷わず選べる状態をつくり、
+    両者の満足度とサービスへの信頼を高めることを目指しました。
   </p>
   <p class="work_img">
-    <img src="../img/work/mixi/minimo/minimo/minimo02.png" alt="" width="100%">
+    <img src="../img/work/mixi/minimo/minimo/キャンセルフローUI部分.png" alt="" width="100%">
   </p>
   <p class="work_img">
-    <img src="../img/work/mixi/minimo/minimo/minimo01.png" alt="予約お断り機能のデザイン" width="100%">
+    <img src="../img/work/mixi/minimo/minimo/キャンセルフロー改善.png" alt="" width="100%">
   </p>
+  <p class="minimo-section-lead">
+    成果・学び<br>
+    今回の施策は11/9にリリースしたことでの効果計測、ユーザーボイスの収集によっての評価は未実施<br>
+    全体フロー・アカウント種別に応じて、適せ値にキャンセル種別を見せるにあたり、アコーディオンのインタラクション設計もminimoにおいたは初めてだったため、より細かく画面遷移とフローを検討を進められた。
+    また、時間軸・アカウント種別に応じた分岐が多かったことから、主要な画面はコンポーネント化し、作業の効率化を図れたことで修正・追加も容易に設計できた点な学びとなった。
+  </p>
+  </div>
 </section>
 
 <section class="work">
-  <h2 class="minimo-section-title">施策チームでPM活動</h2>
+  <h2 class="minimo-section-title">AI駆動のモバイルクライアント開発</h2>
+  <h3 class="minimo-section-subtitle">AI要約機能のデザインと実装</h3>
   <p>
-    既存のチームでは、仕様書がなく各々のこう思う・クライアントやFigmaのどちらを正とするかの判断も揺れていた。施策の大筋の機能要件が決まっていた中、詳細の画面仕様が整っていない状況から画面の条件分岐を含む仕様書を作成<br>
+    投稿される口コミを一定条件を元に200文字以内の要約として表示する。ユーザーの情報収集の手助けをし、予約転換率（CVR）を上げることを目的とした施策<br>
+    チームがAI駆動でスペックドキュメントを作成する進め方をとっていたため、その開発フローに則りクライアント開発を実施<br>
+    仕様書・開発計画自体もskillsを元に生成されるためレビューから入り、変更内容をリポジトリにプッシュする。
+  </p>
+  <p class="work_img">
+    <img src="../img/work/mixi/minimo/minimo/review-summary-flow 1.svg" alt="" width="100%">
+  </p>
+  <p class="work_img">
+    <img src="../img/work/mixi/minimo/minimo/AI要約.png" alt="" width="100%">
+  </p>
+</section>
+
+<!-- Team improvement -->
+<section class="work">
+  <h2 class="minimo-section-title">施策チームでPM活動</h2>
+  <h3 class="minimo-section-subtitle">判断軸の整理</h3>
+  <p>
+    既存のチームでは、仕様書がなく各々のこう思う・クライアントやFigmaのどちらを正とするかの判断も揺れていた場面があった<br>
+    施策の大筋の機能要件が決まっていた中、詳細の画面仕様が整っていない状況から画面の条件分岐を含む仕様書を作成<br>
     開発・QA期間の情報の拠り所になることを目的に対応を進行。 QA期間において、タスクの確認・推進を行い、曖昧な点があればつどつど言語化と調整を実施。
   </p>
 
@@ -155,7 +206,6 @@
   </p>
 </section>
 
-<!-- Team improvement -->
 <section class="work">
   <h2 class="minimo-section-title">チームの進み方を改善する</h2>
 
@@ -178,13 +228,6 @@
   </p>
 </section>
 
-<section class="work">
-  <h2 class="minimo-section-title">AI駆動のモバイルクライアント開発</h2>
-  <p>
-    チームがAI駆動でスペックドキュメントを作成する進め方をとっていたため、その開発フローに則りクライアント開発を実施<br>
-    仕様書・開発計画自体もskillsを元に生成されるため、その内藤のレビューから入り、変更内容をリポジトリにプッシュする。
-  </p>
-</section>
 
 <section class="work">
   <span class="minimo-kicker">学びとこれから</span>
